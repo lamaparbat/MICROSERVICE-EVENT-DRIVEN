@@ -4,3 +4,9 @@ export type IProduct = {
     quantity: number;
     price: number;
 }
+
+export type IOrder = {
+    products: IProduct[];
+    total: number;
+    paymentStatus: string;
+}

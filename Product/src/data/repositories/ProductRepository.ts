@@ -15,6 +15,10 @@ class ProductRepository {
     create(data: IProduct) {
         return this.productDao.create(data);
     }
+
+    deleteOne(data: string) {
+        return this.productDao.deleteOne(data);
+    }
 }
 
 export default ProductRepository;

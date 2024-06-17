@@ -1,7 +1,9 @@
 import mongoose from "mongoose";
 
 const orderSchema = new mongoose.Schema({
-    productIds: Array,
+    products: Array,
+    total: Number,
+    paymentStatus: String,
 });
 
 const OrderModel = mongoose.model('Order', orderSchema);

@@ -15,6 +15,11 @@ class ProductDao {
     create(data: IProduct) {
         return this.productModel.create(data);
     }
+
+    deleteOne(data: IProduct) {
+        console.log(data)
+        return this.productModel.deleteOne(data);
+    }
 }
 
 export default ProductDao;

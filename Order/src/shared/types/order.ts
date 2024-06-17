@@ -1,4 +1,12 @@
-export type IOrder = {
+export type IProduct = {
     _id?: string;
-    productIds: string[];
+    name: string;
+    quantity: number;
+    price: number;
+}
+
+export type IOrder = {
+    products: IProduct[];
+    total: number;
+    paymentStatus: string;
 }

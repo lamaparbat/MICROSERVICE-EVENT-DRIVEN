@@ -15,6 +15,10 @@ class OrderRepository {
     create(data: IOrder) {
         return this.orderDao.create(data);
     }
+
+    deleteOne(data: IOrder) {
+        return this.orderDao.deleteOne(data);
+    }
 }
 
 export default OrderRepository;
