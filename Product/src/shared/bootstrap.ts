@@ -2,8 +2,6 @@ import mongoose from "mongoose"
 import config from "../config";
 import { container } from "../config/di-setup";
 
-let amqpChannel: any;
-
 const initConnection = async () => {
     try {
         await mongoose.connect(config.MONGO_URI);
@@ -18,6 +16,5 @@ const initConnection = async () => {
 }
 
 export {
-    amqpChannel,
     initConnection,
 }
