@@ -11,7 +11,7 @@ app.use(helmet());
 app.use([productRoutes]);
 
 app.get("/", (req, res) => {
-    res.send(`${process.env.NODE_ENV} Server has started....`);
+    res.send(`${process.env.NODE_ENV} Product Server has started....`);
 });
 
 export default app;
